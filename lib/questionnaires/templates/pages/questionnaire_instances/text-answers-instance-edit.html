@@ -1,0 +1,7 @@
+<div class="col-xs-12 no-right-pad no-left-pad">
+    <div class="col-xs-12 no-right-pad no-left-pad">
+        <div class="col-xs-12 no-right-pad no-left-pad"  ng-repeat="answer in question.answers">
+            <textarea name="description" class="col-xs-12 small-right-pad small-left-pad answer-instance-text" ng-class="{'edit-mode':editable}" ng-model="answer.text" placeholder="Inserisci qui la risposta della domanda...." ng-disabled="!editable" ng-required="showAnswer && question.answer_mandatory"></textarea>
+        </div>
+    </div>
+</div>

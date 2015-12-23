@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="ZapMedLav">
+<head>
+    <base href="../../../../">
+
+    <link rel="stylesheet" type="text/css" href="external/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="external/css/jquery-ui.css">
+
+    <script type="text/javascript" src="external/js/jquery.min.js"></script>
+    <script type="text/javascript" src="external/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="external/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="external/js/angular.min.js"></script>
+    <script type="text/javascript" src="external/js/angular-route.js"></script>
+    <script type="text/javascript" src="external/js/moment.min.js"></script>
+    <script type="text/javascript" src="external/js/pikaday.js"></script>
+
+
+    <link rel="import" href="questionnaires_references.html">
+
+    <script type="text/javascript" src="js/app.js"></script>
+
+    <script type="text/javascript" src="configuration.js"></script>
+
+    <script type="text/javascript" src="js/directives/datepicker.js"></script>
+    <script type="text/javascript" src="js/directives/format-date-italian.js"></script>
+
+    <script type="text/javascript" src="js/services/zml-exam-helper.js"></script>
+
+    <script type="text/javascript" src="js/controllers/exams/zml-exams-controller.js"></script>
+    <script type="text/javascript" src="js/controllers/exams/zml-exams-actions-bar-controller.js"></script>
+    <script type="text/javascript" src="js/controllers/exams/zml-exam-edit-form-controller.js"></script>
+    <script type="text/javascript" src="js/controllers/exams/zml-exam-info-edit-controller.js"></script>
+
+    <script type="text/javascript" src="js/directives/exams/zml-exams-actions-bar.js"></script>
+    <script type="text/javascript" src="js/directives/exams/zml-exam-edit-form.js"></script>
+    <script type="text/javascript" src="js/directives/exams/zml-exam-info-edit.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/zml-exam.css" />
+    <link rel="stylesheet" type="text/css" href="external/css/pikaday.css" />
+</head>
+<body ng-controller="ZmlExamsController">
+    <error-panel errors="errors"></error-panel>
+    <zml-exam-edit-form class="col-xs-12 container working-panel" exam="selectedExam" exam-valid="selectedExamValid" editable="isEdit" errors="errors"></zml-exam-edit-form>
+    <zml-exams-actions-bar class="col-xs-12 no-right-pad no-left-pad actions-bar-panel" exam="selectedExam" exam-valid="selectedExamValid" editable="isEdit" errors="errors"></zml-exams-actions-bar>
+</body>
+</html>

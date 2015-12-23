@@ -1,0 +1,14 @@
+<div class="col-xs-12 no-left-pad no-right-pad container" ng-show="exam">
+    <div class="col-xs-12 no-right-pad no-left-pad container">
+        <form class="col-xs-12 no-right-pad no-left-pad container" name="frmExam" novalidate>
+            <div class="col-xs-12 no-right-pad no-left-pad zml-questionnaire-container">
+                <div class="col-xs-12 no-right-pad no-left-pad container scrollable">
+                    <questionnaire-instance-edit class="col-xs-12 container" questionnaire-instance="exam.questionnaire" questionnaire-instance-valid="examValid" editable="editable" errors="errors"></questionnaire-instance-edit>
+                </div>
+            </div>
+            <div class="col-xs-12 no-right-pad no-left-pad medium-top-pad zml-exam-results-container">
+                <zml-exam-info-edit class="col-xs-12 container" exam="exam" examValid="examValid" editable="editable" errors="errors"></zml-exam-info-edit>
+            </div>
+        </form>
+    </div>
+</div>

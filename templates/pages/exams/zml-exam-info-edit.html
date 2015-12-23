@@ -1,0 +1,11 @@
+<div class="col-xs-12">
+    <div class="col-xs-7 no-left-pad no-right-pad">
+        <div class="col-xs-2 no-left-pad">Esito:</div>
+        <select class="col-xs-7 no-right-pad no-left-pad" ng-class="{'edit-mode':editable}" name="results" ng-model="exam.results_id" ng-options="obj.id as obj.description for obj in exam.available_results" ng-disabled="!editable"></select>
+    </div>
+    <div class="col-xs-5 no-left-pad no-right-pad">
+        <div class="col-xs-2 no-left-pad no-right-pad">Data:</div>
+        <input class="col-xs-10 no-right-pad" datepicker ng-model="exam.date" format-date-italian ng-show="editable">
+        <input class="col-xs-10 no-right-pad" ng-model="exam.date" format-date-italian ng-show="!editable" ng-disabled="!editable">
+    </div>
+</div>

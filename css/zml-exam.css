@@ -1,0 +1,16 @@
+.zml-questionnaire-container {
+    position: absolute;
+    top: 0px;
+    bottom: 45px;
+}
+
+.zml-exam-results-container {
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+    height: 45px;
+}
+
+.medium-top-pad {
+    padding-top: 10px;
+}
